@@ -1,0 +1,22 @@
+/* section.service */
+section.service {
+  padding: 190px 0;
+}
+section.service .inner {
+}
+section.service .inner .box .img {
+  margin-top: 60px;
+}
+
+section.service .inner .box.design {
+  width: 45%;
+  margin-top: -40%;
+  padding-top: 60px;
+  border-top: 1px solid #c4e5ea;
+}
+
+section.service .inner .box.design .tit {
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
