@@ -1,0 +1,75 @@
+/* section안에 .inner(공통 넓이 가이드) .box(float) */
+section .inner {
+  width: 1320px;
+  margin: auto;
+  overflow: hidden;
+}
+
+section .inner .box {
+  float: left;
+  width: 50%;
+}
+
+/*section.journal*/
+section.journal {
+  position: relative;
+  padding: 190px 0 120px;
+}
+
+section.journal .scroll {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  writing-mode: vertical-rl;
+  padding-top: 90px;
+}
+
+section.journal .scroll:before {
+  content: '';
+  position: absolute;
+  height: 75px;
+  width: 1px;
+  background: #333;
+  top: 0;
+  left: 6px;
+}
+
+section.journal .inner .box .img {
+  padding-top: 100px;
+}
+
+section.journal .inner .box .tit {
+  margin-bottom: 40px;
+}
+
+section.journal .inner .box ul {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 40px;
+}
+
+section.journal .inner .box ul li {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+section.journal .inner .box ul h3 {
+  float: left;
+  width: 22%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+section.journal .inner .box ul li p {
+  float: left;
+  width: 78%;
+  color: #888;
+}
+
+section.journal .inner .box .moreBtn {
+  clear: both;
+  margin-left: 22%;
+}

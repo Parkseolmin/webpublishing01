@@ -7,20 +7,24 @@
   line-height: 110px;
   margin: auto;
 }
+
 .innerHeader .logo {
   float: left;
 }
+
 .innerHeader .logo a {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 /*gnb + sns*/
 .innerHeader .mainMenu {
   float: right;
   overflow: hidden;
   position: relative;
 }
+
 span.bar {
   position: absolute;
   left: 0;
@@ -30,28 +34,34 @@ span.bar {
   background: #e7e7e7;
   transition: all 0.4s;
 }
+
 /*gnb*/
 .innerHeader .mainMenu .gnb {
   float: left;
 }
+
 .innerHeader .mainMenu .gnb li {
   float: left;
   margin: 0 20px;
 }
+
 .innerHeader .mainMenu .gnb li a {
   display: block;
   width: 100%;
   height: 100%;
   color: #555;
 }
+
 /*sns*/
 .innerHeader .mainMenu .sns {
   float: left;
   margin-left: 300px;
 }
+
 .innerHeader .mainMenu .sns li {
   float: left;
 }
+
 .innerHeader .mainMenu .sns li a {
   display: block;
   width: 100%;
