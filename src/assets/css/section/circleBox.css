@@ -1,0 +1,43 @@
+/* circleBox SVG */
+.circleBox .svgAni path {
+  fill: none;
+  stroke: #f5f5f5;
+  stroke-width: 25;
+}
+
+section.journal .circleBox {
+  width: 700px;
+  position: absolute;
+  right: 13%;
+  top: 100px;
+  z-index: -1;
+  stroke-dasharray: 1564;
+  stroke-dashoffset: 0;
+}
+
+section.team .circleBox {
+  width: 700px;
+  position: absolute;
+  left: 20%;
+  top: -50px;
+  z-index: -1;
+}
+
+/* SVG 애니메이션 */
+.circleBox {
+  display: block;
+  transform: rotate(-90deg);
+}
+.circleBox.animate .svgAni path {
+  animation-name: dash;
+  animation-duration: 1.5s;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1564;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

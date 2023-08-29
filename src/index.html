@@ -2,13 +2,17 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0"
+    />
     <meta name="description" content="웹 퍼블리싱을 연습해보는 사이트입니다." />
     <meta name="keyword" content="" />
     <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/js/scrolla.jquery.min.js" />
   </head>
   <body>
     <div class="wrap">
@@ -70,16 +74,18 @@
           <div class="txt">
             <p>
               <b>
-                “브랜드의 가치를 디자인하는 뮤자인은 디지털 아티스트
-                컴퍼니입니다.”
+                “우수한 품질의 스킨, 헤어 그리고 바디 케어 제품을 만들어 내는
+                것이 변함없는 이솝의 목표입니다.”
               </b>
             </p>
             <p>
               <b>
-                우리의 바램은 작품 하나하나에 창조적이고 유니크한 솔루션을
-                제공하는 것입니다. <br />고객의 니즈에 따라 커스텀이 자유로우며
-                고도화된 기능을 자랑하는 플랫폼인 ‘musign W.Platform’ <br />
-                은 뮤자인이 가지고 있는 수많은 노하우의 결과입니다.
+                우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해
+                폭넓은 조사를 하며,<br />
+                반드시 효능과 안전성이 입증된 성분만을 사용합니다. 고객의 니즈에
+                따라 커스텀이 자유로우며, 고도화된 기능을 자랑하는 플랫폼인
+                이솝은 2003년 멜버른 베이사이드 교외의 세인트 킬다의 작은 지하
+                코너에 위치한 스토어에서 첫 고객을 맞이했습니다.
               </b>
             </p>
             <p>
@@ -92,11 +98,37 @@
       <!-- journal -->
       <section class="journal">
         <p class="scroll">scroll</p>
-        <div class="circleBox"></div>
+        <div class="circleBox animate" data-animate="motion">
+          <svg
+            class="svgAni"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="700px"
+            height="700px"
+            viewBox="0 0 523.421 523.104"
+            enable-background="new 0 0 523.421 523.104"
+            xml:space="preserve"
+          >
+            <path
+              d="M510.844,261.637
+		c0,69.277-28.291,131.946-73.95,177.084c-44.978,44.464-106.809,71.916-175.05,71.916c-55.662,0-107.058-18.264-148.522-49.125
+		C52.343,416.126,12.843,343.494,12.843,261.637c0-56.924,19.102-109.387,51.245-151.329
+		c45.509-59.381,117.161-97.671,197.755-97.671c70.752,0,134.612,29.51,179.944,76.893
+		C484.565,134.242,510.844,194.871,510.844,261.637z"
+            />
+          </svg>
+        </div>
         <div class="inner">
           <div class="box">
             <p class="img animate" data-animate="motion">
-              <img src="assets/img/img_01.jpg" alt="" />
+              <img
+                src="assets/img/img_11.jpg"
+                alt=""
+                style="filter: grayscale(1)"
+              />
             </p>
           </div>
           <div class="box">
@@ -151,15 +183,21 @@
           <div class="box">
             <div class="txt">
               <p>
-                ‘뮤자인’은 성공적인 프로젝트 경험을 바탕으로 통찰력 있는 전략
-                수립과 글로벌 환경에 최적화된 웹사이트 제작 및 운영, 세련된
-                콘텐츠 디자인 등 다양한 범위에 온라인 인프라를 제공합니다.
-                우리는 다변화하는 시장 환경을 이끌며 이슈를 넘어 센세이션을
-                만드는 ‘Total Global Marketing Agency’입니다.
+                이솝은 새로운 매장의 장소를 찾을 때 이미 존재하는 것을 어떻게
+                활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 지역과 어울리지
+                않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게
+                가치를 더하는 것이 이솝의 진정한 의의입니다. 따라서 지역과
+                연관성 있는 디자인 요소를 활용하기 위해 심혈을 기울입니다.
               </p>
               <a href="#" class="moreBtn">read more</a>
             </div>
-            <p class="img"><img src="assets/img/img_02.jpg" alt="" /></p>
+            <p class="img">
+              <img
+                src="assets/img/img_02.jpg"
+                alt=""
+                style="filter: grayscale(1)"
+              />
+            </p>
           </div>
           <div class="box design">
             <h2 class="tit en">
@@ -168,8 +206,122 @@
               <span><b>DESIGN</b></span>
             </h2>
             <a href="#" class="moreBtn">read more</a>
-            <p class="img"><img src="assets/img/img_03.jpg" alt="" /></p>
+            <p class="img">
+              <img
+                src="assets/img/img_03.jpg"
+                alt=""
+                style="filter: grayscale(1)"
+              />
+            </p>
           </div>
+        </div>
+      </section>
+
+      <!-- customer -->
+      <section class="customer">
+        <h2 class="tit en">
+          <span><b>Every customer gives us new inspiration.</b></span>
+        </h2>
+        <div class="txt">
+          기업의 가치를 효율적으로 전달하기 위해, 혹은 더 많은 사람들에게
+          브랜드와 제품을 알리기 위해 노력합니다.
+        </div>
+      </section>
+
+      <!-- team -->
+      <section class="team">
+        <div class="circleBox animate" data-animate="motion">
+          <svg
+            class="svgAni"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="700px"
+            height="700px"
+            viewBox="0 0 523.421 523.104"
+            enable-background="new 0 0 523.421 523.104"
+            xml:space="preserve"
+          >
+            <path
+              d="M510.844,261.637
+		c0,69.277-28.291,131.946-73.95,177.084c-44.978,44.464-106.809,71.916-175.05,71.916c-55.662,0-107.058-18.264-148.522-49.125
+		C52.343,416.126,12.843,343.494,12.843,261.637c0-56.924,19.102-109.387,51.245-151.329
+		c45.509-59.381,117.161-97.671,197.755-97.671c70.752,0,134.612,29.51,179.944,76.893
+		C484.565,134.242,510.844,194.871,510.844,261.637z"
+            />
+          </svg>
+        </div>
+        <div class="inner">
+          <div class="box left">
+            <h2 class="tit en">
+              <span class="en_s">are you a digital expert?</span>
+              <span><b>Join our team</b></span>
+            </h2>
+            <div class="txt">
+              <p>
+                각자의 개성이 넘치는 디자이너들은 모두 일을 즐기는
+                스페셜리스트이며, 유머러스한 프로들입니다. <br />
+                우리의 문은 항상 열려있으니, 언제든 찾아와주세요.
+              </p>
+            </div>
+            <a href="#" class="moreBtn">read more</a>
+            <p class="img"><img src="assets/img/img_05.jpg" alt="" /></p>
+          </div>
+
+          <div class="box">
+            <p class="img"><img src="assets/img/img_06.jpg" alt="" /></p>
+            <h2 class="tit en">
+              <span class="en_s"><b>Say hello</b></span>
+              <span><b>Inquiry now</b></span>
+            </h2>
+            <div class="txt">
+              <p>
+                각 분야의 전문가들과 함께 하세요! 브랜드의 영향력은 곧
+                비즈니스의 경쟁력입니다. <br />
+                Our doors are always open, so come anytime.
+              </p>
+            </div>
+            <a href="#" class="moreBtn">read more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <section class="footer">
+        <div class="top">
+          <h2 class="tit en">
+            <span><b>nature by design</b></span>
+          </h2>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>
+              NATURE<br />
+              BEAUTY EXPERIENCE<br />
+              PLATFORM
+            </li>
+            <li>
+              <b>Address</b><br />
+              9F, 5F, 156 Seongan-ro<br />
+              Gangdong-gu, Seoul,<br />
+              Korea
+            </li>
+            <li>
+              <b>Contacts</b><br />
+              <b>T</b> 02 123 4567<br />
+              <b>T</b> 070 123 4567<br />
+              <b>E</b> nature@gmail.com
+            </li>
+            <li>
+              <b>SNS</b><br />
+              Bechance<br />
+              Facebook<br />
+              Instagram<br />
+              Blog
+            </li>
+          </ul>
         </div>
       </section>
     </div>

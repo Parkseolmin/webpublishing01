@@ -8,14 +8,20 @@
   font-family: 'Lush'; /* 폰트 이름 지정 */
   src: url('/src/assets/font/Lush.ttf') format('truetype'); /* 폰트 파일 경로 지정 */
 }
+
+@font-face {
+  font-family: 'Aesop';
+  src: url('/src/assets/font/Aesop\ Regular.ttf') format('truetype');
+}
 .body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .en {
-  /* font-family: 'Lush', sans-serif; */
+  font-family: 'Lush', sans-serif;
+  /* font-family: 'Aesop', sans-serif; */
   /* font-weight: bold; */
-  font-family: 'handel gothic', sans-serif;
+  /* font-family: 'handel gothic', sans-serif; */
 }
 
 .en_s {

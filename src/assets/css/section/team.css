@@ -1,0 +1,23 @@
+/* section.team */
+section.team {
+  padding: 190px 0;
+  position: relative;
+}
+
+section.team .inner .box.left {
+  text-align: right;
+  padding-right: 80px;
+  box-sizing: border-box;
+}
+
+section.team .inner .tit {
+  margin-top: 40px;
+}
+
+section.team .inner .img {
+  margin-top: 100px;
+}
+
+section.team .inner .box .txt {
+  margin: 30px 0;
+}
