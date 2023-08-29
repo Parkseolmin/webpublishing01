@@ -12,12 +12,14 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/js/scrolla.jquery.min.js" />
+    <!-- <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="wrap">
       <!-- header -->
-      <header>
+      <header data-scroll>
         <div class="innerHeader">
           <h1 class="logo">
             <a href="index.html">
@@ -57,7 +59,7 @@
       </header>
       <!-- contents -->
       <!-- visual -->
-      <section class="visual">
+      <section class="visual" data-scroll>
         <div class="mainImg">
           <p class="img">
             <img src="assets/img/mainVisual.jpg" alt="" />
@@ -96,7 +98,7 @@
       </section>
 
       <!-- journal -->
-      <section class="journal">
+      <section class="journal" data-aos="fade-up" data-aos-once="false">
         <p class="scroll">scroll</p>
         <div class="circleBox animate" data-animate="motion">
           <svg
@@ -114,21 +116,17 @@
           >
             <path
               d="M510.844,261.637
-		c0,69.277-28.291,131.946-73.95,177.084c-44.978,44.464-106.809,71.916-175.05,71.916c-55.662,0-107.058-18.264-148.522-49.125
-		C52.343,416.126,12.843,343.494,12.843,261.637c0-56.924,19.102-109.387,51.245-151.329
-		c45.509-59.381,117.161-97.671,197.755-97.671c70.752,0,134.612,29.51,179.944,76.893
-		C484.565,134.242,510.844,194.871,510.844,261.637z"
+            c0,69.277-28.291,131.946-73.95,177.084c-44.978,44.464-106.809,71.916-175.05,71.916c-55.662,0-107.058-18.264-148.522-49.125
+            C52.343,416.126,12.843,343.494,12.843,261.637c0-56.924,19.102-109.387,51.245-151.329
+            c45.509-59.381,117.161-97.671,197.755-97.671c70.752,0,134.612,29.51,179.944,76.893
+            C484.565,134.242,510.844,194.871,510.844,261.637z"
             />
           </svg>
         </div>
         <div class="inner">
           <div class="box">
-            <p class="img animate" data-animate="motion">
-              <img
-                src="assets/img/img_11.jpg"
-                alt=""
-                style="filter: grayscale(1)"
-              />
+            <p class="img animate">
+              <img src="assets/img/img_11.jpg" alt="" />
             </p>
           </div>
           <div class="box">
@@ -172,7 +170,52 @@
       </section>
 
       <!-- service -->
-      <section class="service">
+      <section class="service" data-aos="fade-down" data-aos-once="false">
+        <div class="inner">
+          <div class="box">
+            <h2 class="tit en">
+              <span class="en_s"><b>Connected service</b></span>
+              <span><b>Capabilities</b></span>
+            </h2>
+          </div>
+          <div class="box">
+            <div class="txt">
+              <p>
+                이솝은 새로운 매장의 장소를 찾을 때 이미 존재하는 것을 어떻게
+                활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 지역과 어울리지
+                않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게
+                가치를 더하는 것이 이솝의 진정한 의의입니다. 따라서 지역과
+                연관성 있는 디자인 요소를 활용하기 위해 심혈을 기울입니다.
+              </p>
+              <a href="#" class="moreBtn">read more</a>
+            </div>
+            <p class="img">
+              <img
+                src="assets/img/img_02.jpg"
+                alt=""
+                style="filter: grayscale(1)"
+              />
+            </p>
+          </div>
+          <div class="box design">
+            <h2 class="tit en">
+              <span><b>BRAND, CUSTOMERS</b></span>
+              <span><b>EXPERIENCE</b></span>
+              <span><b>DESIGN</b></span>
+            </h2>
+            <a href="#" class="moreBtn">read more</a>
+            <p class="img">
+              <img
+                src="assets/img/img_03.jpg"
+                alt=""
+                style="filter: grayscale(1)"
+              />
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- service -->
+      <section class="service" data-aos="fade-left" data-aos-once="false">
         <div class="inner">
           <div class="box">
             <h2 class="tit en">
@@ -218,7 +261,7 @@
       </section>
 
       <!-- customer -->
-      <section class="customer">
+      <section class="customer" data-aos="fade-right" data-aos-once="false">
         <h2 class="tit en">
           <span><b>Every customer gives us new inspiration.</b></span>
         </h2>
@@ -229,7 +272,7 @@
       </section>
 
       <!-- team -->
-      <section class="team">
+      <section class="team" data-aos="fade-left" data-aos-once="false">
         <div class="circleBox animate" data-animate="motion">
           <svg
             class="svgAni"
@@ -289,7 +332,7 @@
       </section>
 
       <!-- footer -->
-      <section class="footer">
+      <section class="footer" data-scroll>
         <div class="top">
           <h2 class="tit en">
             <span><b>nature by design</b></span>
@@ -327,5 +370,12 @@
     </div>
 
     <script type="module" src="assets/js/main.js"></script>
+    <script>
+      // ScrollOut({
+      //   // once: true
+      //   threshold: 0.2, //value 0.2 would require 20% of the element to be visible before marking it visible
+      // });
+      AOS.init();
+    </script>
   </body>
 </html>

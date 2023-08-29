@@ -68,3 +68,15 @@ span.bar {
   height: 100%;
   padding: 0 10px;
 }
+
+/* [data-scroll] {
+  transition: all 1s ease-in-out;
+}
+[data-scroll='in'] {
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll='out'] {
+  opacity: 0;
+  transform: translateY(200px);
+} */
